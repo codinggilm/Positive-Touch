@@ -1,0 +1,67 @@
+// @import '_utilities';
+
+#main-nav {
+    background: #e33a93;
+    position: fixed;
+    // top: 0;
+    // margin-bottom: 50px;
+    width: 100%;
+    // display: block;
+    // opacity: 0.9;
+    z-index: 1;
+    
+    .container-nav {
+        padding: 0 3rem;
+        width: 100%;
+        margin: auto;
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            
+
+            img {
+                // display: block;
+                height: 70px;
+                width: 120px;
+            }
+        }
+
+        a { 
+            display: block;
+            color: #fff;
+            padding: 0.5rem;
+            font-weight: 600;
+
+            &:hover {
+                background: #fff;
+                color: #e33a93;
+                transition: 0.5s;
+            }
+        }
+
+        .nav-item {
+            cursor: pointer;
+        }
+        
+        .nav-item:hover {
+            .dropdown {
+                display: block;
+            }
+        }
+
+        .dropdown {
+            position: absolute;
+            top: 38px;
+            right: 0;
+            width: 200px;
+            background: #e33a93;
+            color: #fff;
+            // transform: translateX(-45%);
+            overflow: hidden;
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,55 @@
+@import'config';
+@import'utilities';
+
+
+#testimonials-main {
+    
+    
+    #testimonials {
+        background: url(../assets/img/dog8.jpg) no-repeat center center/cover;
+        background-attachment: fixed;
+        height: 100vh;
+    
+    
+        .testimonials-container {
+            // display: flex;
+            // flex-direction: row;
+            // background-attachment: fixed;
+            // background: url(../assets/img/dog8.jpg) no-repeat center center/cover;
+        
+            // margin: 5rem 0;
+            
+            h1 {
+                font-size: 2rem;
+                padding-bottom: 5rem;
+            }
+
+            // .review-section {
+                // height: 100vh;
+                // display: grid;
+                // grid-template-columns: repeat(3, 1fr);
+                // // background: transparent;
+                // gap: 3rem;
+                // // align-items: center;
+                // text-align: center;
+            // }
+        }
+
+        .review-grid {
+            height: 100vh;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                // background: transparent;
+                gap: 3rem;
+                // align-items: center;
+                text-align: center;
+        }
+    
+    }
+
+    // .testimonials-footer {
+    //     position: absolute;
+    //     width: 100%;
+    //     bottom: 0;  
+    // }
+}

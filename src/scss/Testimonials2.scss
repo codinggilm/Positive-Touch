@@ -1,0 +1,41 @@
+@import'config';
+@import'utilities';
+
+#testimonials-main {
+    // background: url(../assets/img/dog11.jpg) no-repeat center center/cover;
+    // background-attachment: fixed;
+    // height: 100vh;
+
+    .review-lead {
+        text-align: center;
+        font-size: 3rem;
+        color: #fff;
+    }
+
+    .review-slide {
+        background: url(../assets/img/dog11.jpg) no-repeat center center/cover;
+        background-attachment: fixed;
+        // background: transparent;
+        height: 100vh;
+        // display: flex;
+        // display: grid;
+        // grid-template-columns: repeat(3, 1fr);
+        // // background: transparent;
+        // gap: 3rem;
+        // // align-items: center;
+        // text-align: center;
+
+        
+    }
+            .review-grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                // background: transparent;
+                gap: 3rem;
+                // align-items: center;
+                text-align: center;
+            }
+    
+    
+    
+}

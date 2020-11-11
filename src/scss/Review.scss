@@ -1,0 +1,53 @@
+@import'utilities';
+
+
+.review-main {
+    margin-top: 3rem;
+
+    .review-container {
+        background: #ccc;
+        color: #000;
+        text-align: center;
+        width: 400px;
+    
+        p {
+            margin-bottom: 1rem;
+        }
+
+        .review-wrapper {
+            padding: 1.5rem 0;
+           
+        }
+
+        svg {
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            margin-top: -21px;
+            margin-left: -110px;
+            fill: #ccc;
+            
+        }
+        
+    }
+
+
+
+    // svg {
+    //     fill: rgb(251, 150, 201);
+    //     color: #000;
+    //     // margin-top: -2px;
+    //     // margin-left: -8rem;
+    //     position: absolute;
+    //     width: 33px;
+    //     height: 16px;
+
+    //     path {
+    //         height: 100%;
+    //         width: 100%;
+    //         color: lightcoral;
+    //         transform-origin: 50px 50px;
+    //     }
+    // }
+
+}
