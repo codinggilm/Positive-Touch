@@ -17,7 +17,7 @@ const DropdownMenu = (props) => {
     return (
         <div className="dropdown" onMouseLeave={props.close}>
          {/* <div className={props.show}> */}
-            <li><a href="https://positive-touch.netlify.app/puppyservices">For puppies</a></li>
+            <li><a href="/puppyservices">For puppies</a></li>
             <li><a href="">For adults</a></li>
         </div>
     )
