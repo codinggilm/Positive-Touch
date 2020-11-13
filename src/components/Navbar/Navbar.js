@@ -45,13 +45,13 @@ class Navbar extends Component {
                     <div className="container-nav">
                         <ul>
                             <li><a href="/" className="current" >Home</a></li>
-                            <li><a href="/about">About Us</a></li>
-                            <li><a href="/what">What we do</a></li>
+                            <li><a href="https://positive-touch.netlify.app/about">About Us</a></li>
+                            <li><a href="https://positive-touch.netlify.app/what">What we do</a></li>
                             {/* <img src={logo} alt=""/> */}
-                            <li><a href="/testimonials">Testimonials</a></li>
-                            <li><a href="/meet">Meet Ellie</a></li>
+                            <li><a href="https://positive-touch.netlify.app/testimonials">Testimonials</a></li>
+                            <li><a href="https://positive-touch.netlify.app/meet">Meet Ellie</a></li>
                             {/* <li><a href="#gallery">Gallery</a></li> */}
-                            <li><a href="/contact">Contact</a></li>
+                            <li><a href="https://positive-touch.netlify.app/contact">Contact</a></li>
                             {/* <li><a href="/compo">Compo</a></li> */}
                             <ul className="nav-item" 
                             // onMouseEnter={this.openDropdown}
