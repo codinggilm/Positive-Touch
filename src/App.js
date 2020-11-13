@@ -32,7 +32,7 @@ const App = () => {
             <Route path="/compo" component={Compo} /> */}
 
             {/* **** NETLIFY LINKS **** */}
-            <Route path="https://positive-touch.netlify.app" exact component={Home} />
+            <Route path="/" exact component={Home} />
             <Route path="https://positive-touch.netlify.app/about" component={About} />
             <Route path="https://positive-touch.netlify.app/what" component={What} />
             <Route path="https://positive-touch.netlify.app/testimonials" component={Testimonials} />
