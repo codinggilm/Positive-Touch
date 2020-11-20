@@ -31,16 +31,6 @@ const App = () => {
             <Route path="/puppyservices" component={PuppyServices} />
             <Route path="/compo" component={Compo} />
 
-            {/* **** NETLIFY LINKS **** */}
-            {/* <Route path="/" exact component={Home} />
-            <Route path="https://positive-touch.netlify.app/about" component={About} />
-            <Route path="https://positive-touch.netlify.app/what" component={What} />
-            <Route path="https://positive-touch.netlify.app/testimonials" component={Testimonials} />
-            <Route path="https://positive-touch.netlify.app/meet" component={Ellie3} />
-            <Route path="https://positive-touch.netlify.app/contact" component={Contact} />
-            <Route path="https://positive-touch.netlify.app/puppyservices" component={PuppyServices} />
-            <Route path="https://positive-touch.netlify.app/compo" component={Compo} /> */}
-
         </div>
     )
 };

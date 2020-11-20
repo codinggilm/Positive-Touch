@@ -47,22 +47,19 @@ class Navbar extends Component {
                             <li><a href="/" className="current" >Home</a></li>
                             <li><a href="/about">About Us</a></li>
                             <li><a href="/what">What we do</a></li>
-                            {/* <img src={logo} alt=""/> */}
-                            <li><a href="/testimonials">Testimonials</a></li>
-                            <li><a href="/meet">Meet Ellie</a></li>
+                            {/* <li><a href="/testimonials">Testimonials</a></li> */}
                             {/* <li><a href="#gallery">Gallery</a></li> */}
-                            <li><a href="/contact">Contact</a></li>
                             {/* <li><a href="/compo">Compo</a></li> */}
                             <ul className="nav-item" 
-                            // onMouseEnter={this.openDropdown}
-                            // onMouseLeave={this.closeDropdown}
-                            // onMouseOver={this.toggleDropdown}
-                            >
-                            <a 
-                            // onMouseLeave={this.closeDropdown}
-                            >Services</a>
-                            <DropdownMenu />
+                                // onMouseEnter={this.openDropdown}
+                                // onMouseLeave={this.closeDropdown}
+                                // onMouseOver={this.toggleDropdown}
+                                >
+                                <a>Services</a>
+                                <DropdownMenu />
                             </ul>
+                            <li><a href="/meet">Meet Ellie</a></li>
+                            <li><a href="/contact">Contact</a></li>
                             {/* { this.state.open && this.state.showDropdown ? 
                                 <DropdownMenu close={this.closeDropdown}/> 
                                 : null 

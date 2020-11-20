@@ -78,10 +78,10 @@ class Home extends Component {
         sr.reveal('.box-reveal', config5)
 
         const config6 = {
-              origin: 'top',
+            //   origin: 'center',
               duration: 1000,
-              delay: 100,
-              distance: '100px',
+              delay: 500,
+              distance: '0px',
               scale: 1,
               easing: 'ease',
             }
