@@ -7,6 +7,7 @@ import Review from './components/Review';
 import Gallery from './components/Gallery';
 import FullGallery from './components/FullGallery';
 import PuppyServices from './containers/PuppyServices';
+import AdultServices from './containers/AdultServices';
 import Navbar3 from './components/Navbar3/Navbar3';
 
 import What from './containers/What/What';
@@ -29,6 +30,7 @@ const App = () => {
             <Route path="/meet" component={Ellie3} />
             <Route path="/contact" component={Contact} />
             <Route path="/puppyservices" component={PuppyServices} />
+            <Route path="/adultservices" component={AdultServices} />
             <Route path="/compo" component={Compo} />
 
         </div>

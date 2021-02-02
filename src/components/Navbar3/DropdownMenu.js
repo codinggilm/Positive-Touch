@@ -18,7 +18,7 @@ const DropdownMenu = (props) => {
         <div className="dropdown" onMouseLeave={props.close}>
          {/* <div className={props.show}> */}
             <li><a href="/puppyservices">For puppies</a></li>
-            <li><a href="">For adults</a></li>
+            <li><a href="/adultservices">For adults</a></li>
         </div>
     )
 }

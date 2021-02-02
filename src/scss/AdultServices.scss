@@ -2,7 +2,7 @@
 
 .services-main {
 
-    .puppy-banner {
+    .adult-banner {
         background: #333;
         position: relative;
         // padding: 8rem 8rem;
@@ -11,7 +11,8 @@
 
         &:before {
             content: '';
-            background: url(../assets/img/puppy4.jpg) no-repeat center center/cover;
+            // best so far: 27 41 42 dogs1
+            background: url(../assets/img/dog42.jpg) no-repeat center center/cover;
             position: absolute;
             top: 0;
             left: 0;
@@ -21,12 +22,12 @@
             // z-index: 1;
         }
 
-        .puppy-container {
+        .adult-container {
             height: 450px;
             position: relative;
         }
 
-        .puppy-content-text {
+        .adult-content-text {
             // background: rgb(0, 0, 0);
             // background: url(../assets/img/dog17.jpg) no-repeat center center/cover;
             // padding: 12rem 8rem;
@@ -58,7 +59,7 @@
         }
     }
 
-    .puppy-intro {
+    .adult-intro {
         text-align: center;
         padding: 2rem 0;
 
@@ -75,7 +76,7 @@
         }
     }
 
-    .puppy-showcase {
+    .adult-showcase {
         background: #cafff298;
 
         &-grid {
@@ -93,7 +94,7 @@
     }
 
 
-    .puppy-services {
+    .adult-services {
         margin-bottom: 1.5rem;
 
         h1 {
@@ -125,7 +126,7 @@
         }
     }
 
-    .puppy-notes {
+    .adult-notes {
         text-align: center;
         margin: 0 20%;
         padding-bottom: 2rem;
