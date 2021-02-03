@@ -14,7 +14,7 @@ import ellie6 from '../assets/ellie/ellie7.png';
 
 const Ellie3 = () => {
     return (
-        <div>
+        <div> 
             <Navbar />
                 <main className="container tp" id="stories-container">
 

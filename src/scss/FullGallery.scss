@@ -61,7 +61,7 @@
             cursor: pointer;
 
             &:hover {
-                color: #e33a93;
+                color:$main-color;
                 transition: 0.3s;
             }
         }
@@ -98,7 +98,7 @@
         margin: auto;
 
             &:hover {
-                color: #e33a93;
+                color: $main-color;
                 transition: 0.3s;
             }
     }

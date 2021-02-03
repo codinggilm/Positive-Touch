@@ -1,21 +1,22 @@
 import React, { Component } from 'react';
 import Modal from '../Modal';   
 import Modal2 from '../Modal2';   
-import './Footer.scss';
+import '../../scss/Footer.scss';
 import darkLogo from '../../assets/img/logo-dark-trans.png';
 
 
  
 class Footer extends Component {
-
+  
     state = {
-        visible: false
-        // removed: false
+        visible: false,
+        tablet: false
     }
 
     showModal = () => {
         this.setState({visible:!this.state.visible}) 
     }
+
 
     // removeModal = () => { Modal.show = "removed" }
 
@@ -39,6 +40,9 @@ class Footer extends Component {
 
 
     render() { 
+
+        // const tablet = this.state.tablet;
+
         return (
             <div id="footer">
                 <div className="container footer-flex">
@@ -52,9 +56,12 @@ class Footer extends Component {
                                     <a href="https://twitter.com/positive__touch"><i className="fab fa-whatsapp fa-2x"></i></a>
                                 </div>
                             </div>
+                            
                             <div className="copy">
-                                <p>Copyright &copy; Positive Touch  2020 - All Rights Reserved. || Copyright &copy; ND Photography 2018 - All Rights Reserved.</p>
-                        
+                            <div className="leftcopy">
+                                <p>Copyright &copy; Positive Touch  2020 - All Rights Reserved. || </p>
+                            </div>
+                                <p id="rightcopy">Copyright &copy; ND Photography 2018 - All Rights Reserved.</p>
                             </div>
                         </div>
                         <div className="meta">

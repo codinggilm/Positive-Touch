@@ -289,7 +289,7 @@ class Home extends Component {
                                 <div className="home3-content ">
                                     <img src={dog} alt=""/>
                                     <div className="home-content-text">
-                                        <h1>News</h1>
+                                        <h1>Discover our services</h1>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem molestiae a omnis aperiam porro nisi veniam nobis blanditiis possimus eveniet?</p>
                                         <a href="#" className="btn-primary">See More</a>
                                     </div>
@@ -304,7 +304,7 @@ class Home extends Component {
                                 <div className="home2-content-card">
                                     <div className="card-text-wrapper box1">
                                         <h1 className="line1">Be more than a dog owner</h1>
-                                        <h1 className="line2">Be a dog master</h1>
+                                        <h1 className="line2">Be the dog master</h1>
                                         <h1 className="line3">Benefit from a bespoke training</h1>
                                         <h1 className="line4">Start a new journey with your dog</h1>
                                         <div className="contact-box box-reveal">

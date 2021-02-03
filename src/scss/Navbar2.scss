@@ -1,8 +1,9 @@
 @import'utilities';
+@import'config';
 
 .navbar {
     // height: 100px;
-    background: #e33a93;
+    background: $main-color;
     padding: 0 1rem;
 
     .navbar-nav {
@@ -33,7 +34,7 @@
 
             &:hover {
                 background: #fff;
-                color: #e33a93;
+                color:$main-color;
                 transition: 0.5s;
             }
         }

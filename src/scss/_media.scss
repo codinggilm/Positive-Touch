@@ -1,0 +1,126 @@
+/*Media*/
+
+@media (max-width: 768px) {
+
+    // Navbar *********************
+    
+
+    // Footer ***********************
+    #footer {
+        position: relative;
+        bottom: 0;
+
+        .leftcopy {
+            display: flex;
+            align-items: flex-end;
+        }
+        .footer-container .copy {
+
+            // display: flex;
+            flex-direction: column;
+            // justify-content: center;
+            // align-items: center;
+        }
+    }
+
+    
+    // Home page *************************
+
+    #showcase .showcase-container {
+        padding-top: 50px;
+    }
+
+    #hello {
+
+        .hello-grid {
+            display: block;            
+        }
+
+        .hello-card {
+            margin-bottom: 15px;
+        }
+        
+        
+    }
+
+    .hello2 .action-grid .column {
+        padding: 1rem;
+    }
+
+    .home3 {
+        margin: 3rem auto;
+
+        .home3-grid {
+            gap: 0rem;
+        }
+
+        .home3-content {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .home-content-text {
+            text-align: center;
+            align-items: center;
+
+            h1 {
+                padding-top: 1rem;
+            }
+        }
+    }
+
+
+    .home2 .home2-content-card {
+        padding-top: 7rem;
+        margin: 0 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    // About page **********************
+
+    #about-main {
+
+        #about-us {
+            
+            .about-section {
+                flex-direction: column;
+
+                aside {
+                    width: 100%;
+                    height: 50%
+                }
+            }
+
+            .about-container {
+                margin: 5rem;
+            }
+        }   
+        
+        
+        .about-footer {
+            position: relative;
+            width: 100%;
+            bottom: 0;  
+        }
+    }
+
+    // What We Do page ************************
+
+    #what-main .tp {
+
+        .what-intro {
+            padding: 2rem 5rem;
+        }
+
+        .what-showcase {
+            padding: 2rem 5rem 3rem;
+        }
+
+        .what-training .training-container {
+            padding: 2rem 5rem;
+        }
+    }
+
+}

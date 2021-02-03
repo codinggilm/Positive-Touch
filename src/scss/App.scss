@@ -1,5 +1,6 @@
 @import'config';
-// @import'utilities';
+@import'utilities';
+// @import'media';
  
 // Reset
 * {
@@ -11,6 +12,12 @@
 // General Styles ******************
 body {
     font-family: 'Open Sans', sans-serif;
+    min-width: fit-content;
+    // position: fixed;
+    // position: absolute;
+    // width: 100vw;
+
+    // min-width: 100%;
     // padding-top: 70px;
     // font-family: 'Century', sans-serif;
     line-height: 1.4;

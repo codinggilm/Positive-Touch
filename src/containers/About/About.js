@@ -4,7 +4,7 @@ import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/Footer/Footer';
 import dog from '../../assets/img/dog25.jpg';
 import dog2 from '../../assets/img/dog30.jpg';
-
+ 
 import '../../scss/About.scss';
  
 const About = () => {

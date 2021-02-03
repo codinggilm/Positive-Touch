@@ -1,4 +1,5 @@
 @import'utilities';
+@import'config';
 
 .services-main {
 
@@ -72,7 +73,7 @@
         }
 
         h2 {
-            color: #e33a93;
+            color: $main-color;
         }
     }
 
@@ -116,7 +117,7 @@
 
             i {
                 padding-right: 0.5rem;
-                color: #e33a93;
+                color:$main-color;
             }
 
 

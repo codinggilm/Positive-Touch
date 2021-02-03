@@ -66,6 +66,12 @@
 
         .copy {
             margin-left: 2rem;
+            display: flex;
+            flex-direction: row;
+            
+            #rightcopy {
+                margin-left: 5px;
+            }
 
         }
 
@@ -152,3 +158,5 @@
 //       opacity: 0;
 //     }
 // }
+
+@import'media';

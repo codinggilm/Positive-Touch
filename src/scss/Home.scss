@@ -1,8 +1,10 @@
 @import'config';
 @import'utilities'; 
 
-// Header ********************
 
+
+// Header ********************
+ 
 #showcase {
     color: #fff;
     // background: #ccc;
@@ -336,7 +338,7 @@
 
             i {
                 padding-right: 0.5rem;
-                color: #e33a93;
+                color: $main-color;
             }
         }
     }
@@ -476,6 +478,8 @@
     
     
 }
+
+@import'media';
 
 
 
