@@ -1,5 +1,7 @@
 import React from 'react';
+import Media from 'react-media';
 import Navbar from '../../components/Navbar/Navbar';
+import MobileNav from '../../components/MobileNav';
 import Footer from '../../components/Footer/Footer';
 import dog1 from '../../assets/VSA/educate.jpg';
 import dog2 from '../../assets/VSA/engage.jpg';
@@ -11,7 +13,16 @@ import '../../scss/What.scss';
 const What = () => { 
     return (
         <div id="what-main">
-           <Navbar />
+           <Media query="(max-width: 599px)" render={() =>
+                (
+                    <MobileNav />
+                )}
+            />
+            <Media query="(min-width: 599px)" render={() =>
+                (
+                    <Navbar />
+                )}
+            />
             <main className="tp"> 
                 <section className="what-intro">
                     <div className="text-wrapper">

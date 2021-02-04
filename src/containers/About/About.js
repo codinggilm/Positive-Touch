@@ -1,5 +1,7 @@
 import React from 'react';
+import Media from 'react-media';
 import Navbar from '../../components/Navbar/Navbar';
+import MobileNav from '../../components/MobileNav';
 import Footer from '../../components/Footer/Footer';
 import dog from '../../assets/img/dog25.jpg';
 import dog2 from '../../assets/img/dog30.jpg';
@@ -9,7 +11,16 @@ import '../../scss/About.scss';
 const About = () => {
     return (
         <div id="about-main">
-           <Navbar />
+           <Media query="(max-width: 599px)" render={() =>
+                (
+                    <MobileNav />
+                )}
+            />
+            <Media query="(min-width: 599px)" render={() =>
+                (
+                    <Navbar />
+                )}
+            />
            <section id="about-us">
            <div className="about-section tp">
                <aside>

@@ -1,18 +1,25 @@
 import React from 'react';
-// import simpleParallax from 'simple-parallax-js';
+import Media from 'react-media';
+import MobileNav from '../components/MobileNav';
 import Navbar from '../components/Navbar/Navbar';
-// import Footer2 from '../../components/Footer/Footer2/Footer2';
 import Footer from '../components/Footer/Footer';
 import '../scss/Contact.scss';
 import logo from '../assets/img/logo-white-trans.png';
-// import vic2 from '../../assets/victoria/vic2.jpg';
-// import ellie1 from '../../assets/ellie/ellie1.png';
-// import dog1 from '../../assets/img/dog7.png';
+
  
 const Contact = () => {
     return (
         <div>   
-            <Navbar />
+            <Media query="(max-width: 599px)" render={() =>
+                (
+                    <MobileNav />
+                )}
+            />
+            <Media query="(min-width: 599px)" render={() =>
+                (
+                    <Navbar />
+                )}
+            />
             <main id="contact-main" className="tp">
             <img src={logo} alt=""/>
                 <div id="form-container">
@@ -20,21 +27,15 @@ const Contact = () => {
                         <p>Send us a quick message below!</p>
                         <form>
                             <div className="form-group">
-                                {/* <label htmlFor="Name">Name</label> */}
-                                {/* <div className="input-field"> */}
-                                    <input type="text" className="input-field" name="Name" placeholder="Name"/>
-                                {/* </div> */}
+                                <input type="text" className="input-field" name="Name" placeholder="Name"/>
                             </div>
                             <div className="form-group">
-                                {/* <label htmlFor="Email">Email</label> */}
                                 <input type="email" className="input-field" name="email" placeholder="Email"/>
                             </div>
                             <div className="form-group">
-                                {/* <label htmlFor="contact number">Contact Number</label> */}
                                 <input type="text" className="input-field" name="contact number" placeholder="Contact number"/>
                             </div>
                             <div className="message-field">
-                                {/* <label htmlFor="Message">Email</label> */}
                                 <textarea name="" id="" placeholder="Enter Message"></textarea>
                             </div>
                             <button className="btn-contact" type="submit">Send</button>

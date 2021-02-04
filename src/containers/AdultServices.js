@@ -1,5 +1,7 @@
 import React from 'react';
+import Media from 'react-media';
 import Navbar from '../components/Navbar/Navbar';
+import MobileNav from '../components/MobileNav';
 import Footer from '../components/Footer/Footer';
 import '../scss/AdultServices.scss';
 import dog from '../assets/img/dog43.jpg'
@@ -7,7 +9,16 @@ import dog from '../assets/img/dog43.jpg'
 const AdultServices = () => {
     return (
         <div>
-            <Navbar />
+            <Media query="(max-width: 599px)" render={() =>
+                (
+                    <MobileNav />
+                )}
+            />
+            <Media query="(min-width: 599px)" render={() =>
+                (
+                    <Navbar />
+                )}
+            />
             <main className="services-main tp">
                 <section>
                     <div className="adult-banner">

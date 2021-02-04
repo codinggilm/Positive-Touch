@@ -1,5 +1,7 @@
 import React from 'react';
+import Media from 'react-media';
 import Navbar from '../components/Navbar/Navbar';
+import MobileNav from '../components/MobileNav';
 import Footer from '../components/Footer/Footer';
 import '../scss/PuppyServices.scss';
 import puppy from '../assets/img/puppy1.jpg'
@@ -7,7 +9,16 @@ import puppy from '../assets/img/puppy1.jpg'
 const PuppyServices = () => {
     return (
         <div>
-            <Navbar />
+            <Media query="(max-width: 599px)" render={() =>
+                (
+                    <MobileNav />
+                )}
+            />
+            <Media query="(min-width: 599px)" render={() =>
+                (
+                    <Navbar />
+                )}
+            />
             <main className="services-main tp">
                 <section>
                     <div className="puppy-banner">

@@ -1,4 +1,6 @@
 import React from 'react';
+import Media from 'react-media';
+import MobileNav from '../components/MobileNav';
 import Navbar from '../components/Navbar/Navbar';
 import Footer from '../components/Footer/Footer';
 import FullGallery from '../components/FullGallery';
@@ -10,7 +12,16 @@ import ellie6 from '../assets/ellie/ellie7.png';
 const Ellie3 = () => { 
     return (
         <div> 
-            <Navbar />
+            <Media query="(max-width: 599px)" render={() =>
+                (
+                    <MobileNav />
+                )}
+            />
+            <Media query="(min-width: 599px)" render={() =>
+                (
+                    <Navbar />
+                )}
+            />
             <main className="container tp" id="stories-container">
 
                 <p className="meet-title">Hi, I'm Ellie.</p>
