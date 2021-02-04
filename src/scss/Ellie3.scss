@@ -7,7 +7,7 @@
     // flex-direction: column;
     // justify-content: center;
     // align-items: center;
-
+ 
  
     #stories-container {
         
@@ -94,7 +94,7 @@
                 color: #fff;
                 margin: 2rem 0;
                 padding: 1rem;
-                background:$main-color;
+                background:#e33a93;
                 border-radius: 10px;
                 
                 &:hover {
@@ -123,4 +123,6 @@
     }
 // }
     
+
+@import'media';
     

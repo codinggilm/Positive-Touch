@@ -3,22 +3,13 @@ import { Route } from 'react-router-dom';
 import './scss/App.scss';
 import Home from './containers/Home/Home';
 import About from './containers/About/About';
-import Review from './components/Review';
-import Gallery from './components/Gallery';
-import FullGallery from './components/FullGallery';
 import PuppyServices from './containers/PuppyServices';
 import AdultServices from './containers/AdultServices';
-import Navbar3 from './components/Navbar3/Navbar3';
-
 import What from './containers/What/What';
 import Testimonials from './containers/Testimonials/Testimonials';
-// import Ellie from './containers/Ellie/Ellie';
 import Contact from './containers/Contact';
-// import Modal from './components/Modal';
-// import Ellie2 from './containers/Ellie2/Ellie2';
 import Ellie3 from './containers/Ellie3';
 import Compo from './containers/Compo';
-// import Contact from './containers/Contact/Contact';
  
 const App = () => {
     return (

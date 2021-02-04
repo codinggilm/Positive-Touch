@@ -7,7 +7,7 @@ import dog from '../assets/img/dog43.jpg'
 const AdultServices = () => {
     return (
         <div>
-           <Navbar />
+            <Navbar />
             <main className="services-main tp">
                 <section>
                     <div className="adult-banner">
@@ -57,12 +57,6 @@ const AdultServices = () => {
                     </div>
                 </section>
 
-                {/* <section className="adult-notes">
-                    <h2>Please note</h2>
-                    <p>The adult consultations are for puppies up to 6 months with minor behaviours e.g. separation anxiety, toileting, adult biting, pulling on the lead etc. If you are experiencing more severe behaviour, a standard consultation will better suit your requirements.</p>
-                    <hr className= "breakline"/>
-                </section> */}
-
                 <section>
                     <div className="contact-banner">
                         <div className="contact-container">
@@ -78,7 +72,7 @@ const AdultServices = () => {
 
 
             <div>
-            <Footer />
+                <Footer />
             </div>
         </div>
     )

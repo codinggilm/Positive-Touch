@@ -10,10 +10,7 @@
         position: relative;
         bottom: 0;
 
-        .leftcopy {
-            display: flex;
-            align-items: flex-end;
-        }
+        
         .footer-container .copy {
 
             // display: flex;
@@ -111,16 +108,170 @@
     #what-main .tp {
 
         .what-intro {
-            padding: 2rem 5rem;
+            padding: 2rem 2rem;
         }
 
         .what-showcase {
-            padding: 2rem 5rem 3rem;
+            padding: 2rem 2rem 3rem;
         }
 
         .what-training .training-container {
-            padding: 2rem 5rem;
+            padding: 2rem 2rem;
         }
     }
 
+    // Puppy Services ***************************
+
+    .services-main {
+        
+        .puppy-banner .puppy-content-text {
+            margin: 0rem 3rem;
+            text-align: center;
+        }
+        .puppy-showcase .puppy-showcase-grid {
+            padding: 5rem 1rem;
+
+            img {
+                height: 100%;
+            }
+
+            .puppy-showcase-content {
+                text-align: center;
+            }
+        }
+
+        .puppy-notes {
+            margin: 0 2rem;
+        }
+    }
+
+    // Adult Services ***************************
+
+    .services-main {
+        
+        .adult-banner .adult-content-text {
+            margin: 0rem 3rem;
+            text-align: center;
+        }
+        .adult-showcase .adult-showcase-grid {
+            padding: 5rem 1rem;
+
+            img {
+                height: 100%;
+            }
+
+            .adult-showcase-content {
+                text-align: center;
+            }
+        }
+
+        .adult-notes {
+            margin: 0 2rem;
+        }
+    }
+
+    // Meet Ellie *****************************
+    #stories-container {
+
+        .meet-title {
+            padding: 0;
+            margin-top: 3rem;
+        }
+
+
+        .story-container {
+            padding: 2rem 2rem;
+            flex-wrap: wrap;
+
+            .story-lead {
+                text-align: center;
+                padding-bottom: 1rem;
+                font-size: 2rem;
+            }
+
+            .story-text {
+                text-align: center;
+                margin-bottom: 1rem;
+
+                p {
+                    margin: unset;
+                }
+            }
+        }
+
+        .story-right {
+            .story-lead {
+                padding-top: 1rem;
+            }
+        }
+
+    }
+
+    // Gallery *********************
+    .gallery-grid {
+        margin: 0rem;
+    }
+
+    .pic-grid {
+        img {
+            height: 150px;
+        }
+    }
+
+    .pic-modal .close-icon-wrapper {
+        right: 50px;
+    }
+
+    .modal-content {
+        img {
+            height: 500px;
+            width: 500px;
+        }
+    }
+
+    .resized {
+        text-align: center;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: inherit;
+        width: inherit;
+
+        img {
+            height: 500px;
+            width: 500px;
+        }
+    }
+    
+    .resized-small {
+        text-align: center;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-top: 0px;
+        height: inherit;
+        width: inherit;
+
+        img {
+            height: 500px;
+            width: 500px;
+        }
+    }
+
+    // Contact page ************
+
+
 }
+
+
+@media (max-width: 600px) {
+    
+    // Home page ************
+    .tp {
+        padding-top: 0px;
+    }
+}   

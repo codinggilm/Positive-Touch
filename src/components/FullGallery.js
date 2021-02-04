@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 import Navbar from './Navbar/Navbar';
-// import GalleryModal from './GalleryModal';
 import '../scss/FullGallery.scss'; 
 import picArray from './Pictures.js';
 
 
 class FullGallery extends Component {
-        
+         
     state = { 
         showModal: false,
         pictures: picArray,
@@ -19,7 +18,7 @@ class FullGallery extends Component {
         this.setState({ 
             showModal: false,
             index: this.state.index
-        });
+        })
     }
 
     previousPicture = (currIndex) => {
@@ -33,25 +32,6 @@ class FullGallery extends Component {
         currIndex === 9 ? newIndex = 0 : newIndex = currIndex + 1;
         this.setState({ index: newIndex });
     }
-
-    // displayPicture = (currIndex) => {
-    //     let picArray = this.state.pictures;
-    //     if (currIndex === 3 || currIndex === 4 || currIndex === 6 ) {
-    //         return (
-    //             <div className="resized">
-    //                 <img src={picArray[currIndex].src} alt="" />
-    //             </div>
-    //         )
-    //     } else if (currIndex === 2) {
-    //         return (
-    //             <div className="resized-small">
-    //                 <img src={picArray[currIndex].src} alt="" />
-    //             </div>  
-    //         )
-    //     } else {
-    //         return <img src={picArray[currIndex].src} alt="" />
-    //     } 
-    // }
 
     
     render() {
@@ -92,8 +72,6 @@ class FullGallery extends Component {
                                     onClick={() => this.previousPicture(currIndex)}>
                                 </i>
 
-                                {/* {()=>this.displayPicture(currIndex)} */}
-
                                 { 
                                     this.state.index === 3 || this.state.index === 4 || this.state.index === 6 ?
                                     <div className="resized">
@@ -110,7 +88,6 @@ class FullGallery extends Component {
                                 
                                 }
                                 
-
                                 <i 
                                     className="fas fa-chevron-right fa-2x" 
                                     onClick={() =>  this.nextPicture(currIndex)}>

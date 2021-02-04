@@ -7,7 +7,7 @@ import puppy from '../assets/img/puppy1.jpg'
 const PuppyServices = () => {
     return (
         <div>
-           <Navbar />
+            <Navbar />
             <main className="services-main tp">
                 <section>
                     <div className="puppy-banner">
@@ -60,10 +60,7 @@ const PuppyServices = () => {
                 <section className="puppy-notes">
                     <h2>Please note</h2>
                     <p>The puppy consultations are for puppies up to 6 months with minor behaviours e.g. separation anxiety, toileting, puppy biting, pulling on the lead etc. If you are experiencing more severe behaviour, a standard consultation will better suit your requirements.</p>
-                    {/* <div> */}
-                    {/* <p>test</p> */}
-                        <hr className= "breakline"/>
-                    {/* </div> */}
+                    <hr className= "breakline"/>
                 </section>
 
                 <section>
@@ -81,7 +78,7 @@ const PuppyServices = () => {
 
 
             <div>
-            <Footer />
+                <Footer />
             </div>
         </div>
     )

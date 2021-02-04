@@ -1,6 +1,5 @@
 import React from 'react';
 import Navbar from '../../components/Navbar/Navbar';
-// import Footer2 from '../../components/Footer/Footer2/Footer2';
 import Footer from '../../components/Footer/Footer';
 import dog1 from '../../assets/VSA/educate.jpg';
 import dog2 from '../../assets/VSA/engage.jpg';
@@ -13,8 +12,8 @@ const What = () => {
     return (
         <div id="what-main">
            <Navbar />
-           <main className="tp"> 
-               <section className="what-intro">
+            <main className="tp"> 
+                <section className="what-intro">
                     <div className="text-wrapper">
                         <h1>Positive Touch training</h1>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sit distinctio itaque veritatis placeat reprehenderit doloribus vel, fuga harum. Aliquid accusantium repellat ullam sit sed delectus veritatis natus error in!</p>
@@ -37,25 +36,25 @@ const What = () => {
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam, aperiam quisquam inventore ut quo quam neque eveniet distinctio voluptatum?</p>
                         </div>
                     </div>
-               </section>
+                </section>
 
-               <section className="what-showcase">
+                <section className="what-showcase">
                    <div className="showcase-container">
                        <h1 className="showcase-lead">Why Positive Training?</h1>
-                       <div className="showcase-wrapper">
+                        <div className="showcase-wrapper">
                            <img src={dogLogo} alt=""/>
-                           <div className="showcase-content">
+                            <div className="showcase-content">
                                <h1>'Positive Training' is not a scientific term.</h1>
                                <p>It’s what we call a combination of philosophies, methods, and understandings which collectively define a progressive, science-based approach to dog training.</p>
                                <br/>
                                <p>There’s a great deal of ambiguity and misunderstanding regarding positive training, which results in confusion among pet owners, training professionals and the general public.</p>
-                           </div>
-                       </div>
-                   </div>
-               </section>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-               <section className="what-training">
-                   <div className="training-container">
+                <section className="what-training">
+                    <div className="training-container">
                         <div className="training-text-wrapper">
                             <h1 className="training-lead">The 4 pillars of Positive Training:</h1>
                             <p>1. Use Positive Reinforcement</p>
@@ -66,10 +65,10 @@ const What = () => {
                         <img src={training} alt=""/>
                         <p className="training-contact">To find out more about our services, book a free consultation or simply discuss your situation with us, please get in touch.</p>
                    </div>
-               </section>
+                </section>
             </main>
             <div className="what-footer">
-            <Footer />
+                <Footer />
             </div>
         </div>
     )

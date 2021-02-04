@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
+import Media from 'react-media';
 import Navbar from '../../components/Navbar/Navbar';
-// import Navbar from '../../components/Navbar3/Navbar4';
+import MobileNav from '../../components/MobileNav';
 import Footer from '../../components/Footer/Footer';
 import dog from '../../assets/img/dog28.jpg';
 import dog1 from '../../assets/img/dog22.jpg';
@@ -14,8 +15,7 @@ import ellie from '../../assets/ellie/ellie4-2.png';
 import logo from '../../assets/img/logo-white-trans.png';
 import '../../scss/Home.scss';
 import sr from '../../ScrollReveal';
-// import logo from './assets/img/logo-dark-trans1.png';
-// import logo from './assets/img/logo-pink.png';
+
  
  
 class Home extends Component {
@@ -94,88 +94,42 @@ class Home extends Component {
 
         return (
             <div id="home-wrapper">
-                
-                <Navbar /> 
+
+                <Media query="(max-width: 599px)" render={() =>
+                    (
+                        <MobileNav />
+                    )}
+                />
+                <Media query="(min-width: 599px)" render={() =>
+                    (
+                        <Navbar />
+                    )}
+                />
     
                 <div id="home-main" className="tp">
                     <header id="showcase">
                         <div className="container showcase-container">
                         <img src={logo} alt=""/>
-                            {/* <h1>Welcome to Positive Touch</h1>
-                            <p>There's much to see here. So, take your time, look around, and learn all there is to know about us.</p>
-                            <br/>
-                            <p>We hope you enjoy our site and take a moment to leave us a review.</p> */}
                         </div> 
                     </header>
     
-                    {/* <section id="home-content">
-                        <div className="card-container">
-                            <div className="card">
-                                <div className="content-1">
-                                    <h1>Positively Understanding your dog</h1>
-                                    <p>Promoting positive force-free training using the latest canine behavioural science techniques.</p>
-                                    <div className="btn-wrapper">
-                                    <a href="#contact" className="btn-primary">
-                                        Contact us
-                                    </a>
-                                    </div>
-                                </div>
-                                <img src={dog} alt=""/>
-                            </div>
-                        </div>
-                    </section> */}
-                    {/* <section className="home-banner">
-                        <div className="container">
-                        <h1>Welcome to Positive Touch</h1>
-                            <p>We promote positive force-free training using the latest canine behavioural science techniques.</p>
-                        </div>
-                    </section> */}
+                
     
                     <section id="home-content2">
                         <div className="home-banner">
                             <div className="home-content-text">
                                 <h1 className="title-reveal">Welcome to Positive Touch</h1>
-                                {/* <p>Promoting positive force-free training using the latest canine behavioural science techniques.</p> */}
-                                {/* <div className="btn-wrapper">
-                                <a href="/contact" className="btn-primary">Contact us</a>
-                                </div> */}
+
                             </div>
                         </div>
-                        {/* <div className="home-banner2">
-                            <div className="home-container">
-                                    <div className="home-content">
-                                        <h1>Welcome to Positive Touch</h1>
-                                        <p>We promote positive force-free training using the latest canine behavioural science techniques.</p>
-                                        <div className="btn-wrapper">
-                                        <a href="#contact" className="btn-primary">Contact us</a>
-                                        </div>
-                                    </div>
-                            </div>
-                        </div> */}
-    
-                        {/* BANNER TEST */}
-    
-                        {/* <div className="banner">
-                            <div className="container">
-                                <div className="banner-container">
-                                    <div className="banner-content">
-                                        <h1>Welcome to Positive Touch</h1>
-                                        <p>We promote positive force-free training using the latest canine behavioural science techniques.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> */}
+
+
     
                         <section id="hello">
                             <div className="hello-intro">
                                 <h1 className="hello-title">Positive Touch</h1>
                                 <p>--- Promoting positive force-free training using the latest canine behavioural science techniques. ---</p>
                                 <p>--- We work with you to deliver incredible results for you and your dog ---</p>
-                                {/* <p> Promoting positive force-free training using the latest canine behavioural science techniques. </p>
-                                <p> We work with you to deliver incredible results for you and your dog </p> */}
-                                {/* <h1 className="hello-title2">--- We work with you to deliver incredible results for you and your dog ---</h1> */}
-                                {/* <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus at ut autem eaque, nulla magnam quasi quod illum id quia.</p>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem minus beatae veniam vero omnis ipsa deleniti enim, facilis incidunt rerum!</p> */}
                             </div>
                             <div className="containerr">
                                 <div className="hello-grid">
@@ -212,8 +166,6 @@ class Home extends Component {
                                 </div>
                             </div>
                         </section>
-    
-    
     
                     </section>
                     
@@ -297,23 +249,21 @@ class Home extends Component {
                                 </div>
                             </div>
                         </div>
-                       
                     </section>
     
-                        <section className="home2">
-                                <div className="home2-content-card">
-                                    <div className="card-text-wrapper box1">
-                                        <h1 className="line1">Be more than a dog owner</h1>
-                                        <h1 className="line2">Be the dog master</h1>
-                                        <h1 className="line3">Benefit from a bespoke training</h1>
-                                        <h1 className="line4">Start a new journey with your dog</h1>
-                                        <div className="contact-box box-reveal">
-                                            <a href="" className="btn-primary home2-btn">Click to book a free consultation</a>
-                                        </div>
+                    <section className="home2">
+                            <div className="home2-content-card">
+                                <div className="card-text-wrapper box1">
+                                    <h1 className="line1">Be more than a dog owner</h1>
+                                    <h1 className="line2">Be the dog master</h1>
+                                    <h1 className="line3">Benefit from a bespoke training</h1>
+                                    <h1 className="line4">Start a new journey with your dog</h1>
+                                    <div className="contact-box box-reveal">
+                                        <a href="" className="btn-primary home2-btn">Click to book a free consultation</a>
                                     </div>
                                 </div>
-                        </section>
-    
+                            </div>
+                    </section>
     
                 </div>
     

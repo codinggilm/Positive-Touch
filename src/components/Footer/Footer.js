@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Modal from '../Modal';   
-import Modal2 from '../Modal2';   
 import '../../scss/Footer.scss';
 import darkLogo from '../../assets/img/logo-dark-trans.png';
 
@@ -18,31 +17,7 @@ class Footer extends Component {
     }
 
 
-    // removeModal = () => { Modal.show = "removed" }
-
-    // fadeModal = () => { 
-    //     return (
-    //         <Modal show="slide-out-bottom"/>
-    //     )
-    // }
-        
-    // modalTimer = () => {
-    //     this.fadeModal();
-    //     // setTimeout(()=> this.removeModal(), 4000)
-    // }
-    // noModal = () => {
-    //     return (
-    //         <Modal show="slide-out-bottom"/>,
-    //         setTimeout(()=> this.removeModal(), 4000)
-
-    //     )
-    // }
-
-
     render() { 
-
-        // const tablet = this.state.tablet;
-
         return (
             <div id="footer">
                 <div className="container footer-flex">
@@ -59,7 +34,7 @@ class Footer extends Component {
                             
                             <div className="copy">
                             <div className="leftcopy">
-                                <p>Copyright &copy; Positive Touch  2020 - All Rights Reserved. || </p>
+                                <p>Copyright &copy; Positive Touch  2020 - All Rights Reserved. </p>
                             </div>
                                 <p id="rightcopy">Copyright &copy; ND Photography 2018 - All Rights Reserved.</p>
                             </div>
@@ -69,17 +44,19 @@ class Footer extends Component {
                             <p>Website made by <a href="https://www.github.co.uk">Guillaume Croizon</a></p>
                         </div>
                     </div> 
-                    {/* <Modal /> */}
                     <div className="chat">
                         <div className="icon-wrapper" 
                             onClick={this.showModal}>
                             { !this.state.visible ? <i className="fas fa-comment fa-2x"></i>: <i className="far fa-times-circle fa-2x"></i> }
                         </div>
-                    {/* { this.state.visible ? <Modal /> : null } */}
-                    { this.state.visible ? 
-                        <Modal show="slide-top" 
-                                msg="slide-in-fwd-center"/> : null
-                        
+                    { 
+                        this.state.visible ? 
+                        <Modal 
+                            show="slide-top" 
+                            msg="slide-in-fwd-center"
+                        /> 
+                        : 
+                        null
                     }
                     </div>
                 </div>
