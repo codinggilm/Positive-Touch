@@ -14,9 +14,9 @@ This site is a SPA built using React and SASS, and once the front end is fully p
  
 ## Improving the site and the code
 Current workload:<br />
-- Implementing large tablet display; at the moment, only standard tablet viewing has been added.  Larger tablets like iPad Pro require a few extra modifications<br />
-- Mobile viewing also needs work and some components require conditional rendering based on viewport. Right now, only the home page is nearly done. <br />
-- Cleaning up the unused SASS codes. A lot of my previous ideas are still there, making the file readability messy in some places. <br />
+- Implementing large tablet display; at the moment, only standard tablet viewing has been added. Larger tablets like iPad Pro require a few extra modifications.<br />
+- Mobile viewing also needs work and some components require conditional rendering based on viewport width. Right now, only the home page is nearly done. <br />
+- Cleaning up the unused SASS codes. Some of my previous ideas are still there, they need to be removed to improve file readability and keep the code clean. <br />
 - Removing unused components from the folders. Like for the CSS / SASS code, some components previously made but not in use need to be removed. 
 - Cleaning up unused imports. <br />
 - Creating an import file for pictures. <br />    
