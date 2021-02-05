@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Modal from '../Modal';   
 import '../../scss/Footer.scss';
 import darkLogo from '../../assets/img/logo-dark-trans.png';
-
+ 
 
  
 class Footer extends Component {

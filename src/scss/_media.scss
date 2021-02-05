@@ -40,7 +40,7 @@
         
     }
 
-    .hello2 .action-grid .column {
+    .hello2 .action-grid > div .column {
         padding: 1rem;
     }
 
@@ -270,8 +270,75 @@
 
 @media (max-width: 600px) {
     
-    // Home page ************
+    // Global top margin reset
     .tp {
         padding-top: 0px;
+    }
+
+
+    // Footer *************
+    #footer {
+
+        .chat .icon-wrapper {
+            bottom: 110px;
+        }
+
+        .chat i {
+            padding: 10px 10px;
+        }
+    }
+
+
+    // Home page ************
+    #showcase {
+        height: 300vw;
+    }
+
+    #home-content2 {
+
+        .home-content-text {
+            padding: 6rem 6rem;
+
+            h1 {
+                font-size: 3rem;
+            }
+        }
+    }
+
+    #hello {
+
+        .hello-grid  {
+            padding: 0 2rem;
+        }
+    }
+
+    .hello2 {
+
+        .container {
+            padding: 0rem;
+
+            .hello2-title {
+                padding-bottom: 2rem;
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+
+        }
+    }
+
+    .home3 {
+
+        .home3-grid {
+            padding: 0rem;
+        }
+
+        .home-content-text {
+            padding-bottom: 2rem;
+            
+            p {
+                padding-bottom: 2rem;
+            }
+
+        }
     }
 }   

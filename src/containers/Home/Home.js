@@ -122,14 +122,27 @@ class Home extends Component {
 
                             </div>
                         </div>
-
-
     
                         <section id="hello">
                             <div className="hello-intro">
                                 <h1 className="hello-title">Positive Touch</h1>
-                                <p>--- Promoting positive force-free training using the latest canine behavioural science techniques. ---</p>
-                                <p>--- We work with you to deliver incredible results for you and your dog ---</p>
+                                <Media query="(max-width: 599px)" render={() =>
+                                    (
+                                        <div>
+                                            <p>Promoting positive force-free training using the latest canine behavioural science techniques.</p>
+                                            <p>We work with you to deliver incredible results for you and your dog</p>
+                                        </div>
+                                        
+                                    )}
+                                />
+                                <Media query="(min-width: 599px)" render={() =>
+                                    ( 
+                                        <div>
+                                            <p>--- Promoting positive force-free training using the latest canine behavioural science techniques. ---</p>
+                                            <p>--- We work with you to deliver incredible results for you and your dog ---</p>
+                                        </div>
+                                    )}
+                                />
                             </div>
                             <div className="containerr">
                                 <div className="hello-grid">
@@ -173,33 +186,70 @@ class Home extends Component {
                         <div className="container">
                             <h1 className="hello2-title">We have experience in addressing many kinds of behaviour including:</h1>
                             <div className="action-grid">
-                                <div className="column">
-                                    <ul>
-                                        <li><i className="fas fa-check-square"></i>Aggression</li>
-                                        <li><i className="fas fa-check-square"></i>Pulling on the lead</li>
-                                        <li><i className="fas fa-check-square"></i>Constant barking</li>
-                                        <li><i className="fas fa-check-square"></i>Fussy eaters</li>
-                                        <li><i className="fas fa-check-square"></i>Toileting in the house</li>
-                                    </ul>
-                                </div>
-                                <div className="column">
-                                    <ul>
-                                        <li><i className="fas fa-check-square"></i>Jumping up at visitors</li>
-                                        <li><i className="fas fa-check-square"></i>Persistent following</li>
-                                        <li><i className="fas fa-check-square"></i>Running away/poor recall</li>
-                                        <li><i className="fas fa-check-square"></i>Ignoring requests</li>
-                                        <li><i className="fas fa-check-square"></i>Restlessness</li>
-                                    </ul>
-                                </div>
-                                <div className="column">
-                                    <ul>
-                                        <li><i className="fas fa-check-square"></i>Nervousness</li>
-                                        <li><i className="fas fa-check-square"></i>Destructive behaviour</li>
-                                        <li><i className="fas fa-check-square"></i>Possessiveness</li>
-                                        <li><i className="fas fa-check-square"></i>Hyperactivity</li>
-                                        <li><i className="fas fa-check-square"></i>Separation anxiety</li>
-                                    </ul>
-                                </div>
+                                <Media query="(max-width: 599px)" render={() =>
+                                    (
+                                        <div>
+                                            <div className="column">
+                                                <ul>
+                                                    <li><i className="fas fa-check-square"></i>Aggression</li>
+                                                    <li><i className="fas fa-check-square"></i>Pulling on the lead</li>
+                                                    <li><i className="fas fa-check-square"></i>Constant barking</li>
+                                                    <li><i className="fas fa-check-square"></i>Fussy eaters</li>
+                                                    <li><i className="fas fa-check-square"></i>Toileting in the house</li>
+                                                    <li><i className="fas fa-check-square"></i>Jumping up at visitors</li>
+                                                    <li><i className="fas fa-check-square"></i>Persistent following</li>
+                                                    <li><i className="fas fa-check-square"></i>Running away</li>
+                                                </ul>
+                                            </div>
+                                            <div className="column">
+                                                <ul>
+                                                    <li><i className="fas fa-check-square"></i>Nervousness</li>
+                                                    <li><i className="fas fa-check-square"></i>Destructive behaviour</li>
+                                                    <li><i className="fas fa-check-square"></i>Possessiveness</li>
+                                                    <li><i className="fas fa-check-square"></i>Hyperactivity</li>
+                                                    <li><i className="fas fa-check-square"></i>Separation anxiety</li>
+                                                    <li><i className="fas fa-check-square"></i>Ignoring requests</li>
+                                                    <li><i className="fas fa-check-square"></i>Restlessness</li>
+                                                    <li><i className="fas fa-check-square"></i>Poor recall</li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    )}
+                                />
+                                <Media query="(min-width: 599px)" render={() =>
+                                    (
+                                        <div>
+                                            <div className="column">
+                                                <ul>
+                                                    <li><i className="fas fa-check-square"></i>Aggression</li>
+                                                    <li><i className="fas fa-check-square"></i>Pulling on the lead</li>
+                                                    <li><i className="fas fa-check-square"></i>Constant barking</li>
+                                                    <li><i className="fas fa-check-square"></i>Fussy eaters</li>
+                                                    <li><i className="fas fa-check-square"></i>Toileting in the house</li>
+                                                </ul>
+                                            </div>
+                                            <div className="column">
+                                                <ul>
+                                                    <li><i className="fas fa-check-square"></i>Jumping up at visitors</li>
+                                                    <li><i className="fas fa-check-square"></i>Persistent following</li>
+                                                    <li><i className="fas fa-check-square"></i>Running away/poor recall</li>
+                                                    <li><i className="fas fa-check-square"></i>Ignoring requests</li>
+                                                    <li><i className="fas fa-check-square"></i>Restlessness</li>
+                                                </ul>
+                                            </div>
+                                            <div className="column">
+                                                <ul>
+                                                    <li><i className="fas fa-check-square"></i>Nervousness</li>
+                                                    <li><i className="fas fa-check-square"></i>Destructive behaviour</li>
+                                                    <li><i className="fas fa-check-square"></i>Possessiveness</li>
+                                                    <li><i className="fas fa-check-square"></i>Hyperactivity</li>
+                                                    <li><i className="fas fa-check-square"></i>Separation anxiety</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    )}
+                                />
                             </div>
                             <p className="outro">And much more...</p>
                         </div>
@@ -241,11 +291,10 @@ class Home extends Component {
                                 <div className="home3-content ">
                                     <img src={dog} alt=""/>
                                     <div className="home-content-text">
-                                        <h1>Discover our services</h1>
+                                        <h1>See our services</h1>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem molestiae a omnis aperiam porro nisi veniam nobis blanditiis possimus eveniet?</p>
                                         <a href="#" className="btn-primary">See More</a>
                                     </div>
-        
                                 </div>
                             </div>
                         </div>

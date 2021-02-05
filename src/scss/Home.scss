@@ -1,130 +1,43 @@
 @import'config';
 @import'utilities'; 
 
-
+ 
 
 // Header ********************
  
 #showcase {
     color: #fff;
-    // background: #ccc;
     background: url(../assets/img/doglarge.jpg) no-repeat center center/cover;
     background-attachment: fixed; 
-    // padding: 0 0 2rem;
-    // position: absolute;
     height: 100vh;
 
-    //** Overlay ******************//
-
-    // &:before {
-    //     content: '';
-    //     background: url(../assets/img/dog2.jpg) no-repeat center right / cover;
-    //     position: absolute;
-    //     top: 0;
-    //     left: 0;
-    //     width: 100%;
-    //     height: 100%;
-    //     // opacity: 0.7;
-    // }
 
     .showcase-container {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        // height: 80%;
 
         img {
             // margin-top: 6rem;
             height: 150px;
             width: 400px;
-            // z-index: 1;
         }
 
         h1 {
-            // z-index: 1;
             font-size: 3rem;
             padding-bottom: 2rem;
         }
 
-        // p {
-        //     z-index: 1;
-        // }
     }
 }
 
 
-// Content ********************
-
-// #home-content {
-//     .card-container {
-//         padding: 2rem 3rem;
-//         background: #F9F9FB; 
-//     //     margin: 0 8rem;
-
-//             .card {
-//                     display: grid;
-//                     grid-template-columns: repeat(2, 1fr);
-//                     gap: 1.5rem;
-//                     padding: 2rem 3rem;
-//                     align-items: center;
-//                     // background: #F9F9FB;
-//                     background: #fff;
-//                     margin: 2rem 6rem;
-
-//             .content-1 {
-//                 display: flex;
-//                 flex-direction: column;
-//                 // justify-content: center;
-//                 text-align: center;
-//                 height: 100%;
-
-//                 h1 {
-//                     font-size: 2.5rem;
-//                     margin-bottom: 9rem;
-//                 }
-
-//                 p {
-//                     font-size: 1.6rem;
-//                     margin-bottom: 7rem;
-//                 }
-
-//                 a {
-//                     font-weight: 600;
-//                 }
-
-//                 // .btn-primary {
-//                 //     padding: 1rem;
-//                 //     display: inline-block;
-//                 //     text-align: center;
-//                 //     color: #fff;
-//                 //     width: 20%;
-//                 //     border-radius: 10px;
-//                 //     background: #e33a93;
-
-//                 //     &:hover {
-//                 //         background: #faa9b6;
-//                 //     }
-
-//                 // }
-//             }
-//         }
-//     }
-// }
-
 #home-content2 {
-
-    // background: #000;
-    // background: rgb(255, 255, 255);
-    // background: rgba(188, 255, 252, 0.733);
-    // height: 100vh;
  
     .home-banner {
         background: #333;
         position: relative;
-        // padding: 8rem 8rem;
-        // text-align: center;
-        // color: #fff;
 
         &:before {
             content: '';
@@ -135,33 +48,25 @@
             width: 100%;
             height: 100%;
             opacity: 0.6;
-            // z-index: 1;
         }
     }
     
 
     .home-content-text {
-        // background: rgb(0, 0, 0);
-        // background: url(../assets/img/dog17.jpg) no-repeat center center/cover;
         padding: 12rem 8rem;
         position: relative;
-        // margin-bottom: 2rem;
         text-align: center;
         color: #fff;
-        // z-index: 1;
-        // color: #000;
 
         h1 {
             font-size: 4rem;
             padding-bottom: 1.5rem;
-            // z-index: 1;
         }
 
         p {
             font-weight: 500;
             font-size: 1.2rem;
             padding-bottom: 2.5rem;
-            // z-index: 1;
         }
 
     }
@@ -171,7 +76,6 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
-        // margin-bottom: 1.5rem;
         margin: 1.5rem 10rem;
         padding-bottom: 2rem;
     }
@@ -186,37 +90,6 @@
     }
 } 
 
-// BANNER *********************************** //
-
-// .banner {
-//     background: #333;
-//     color: #fff;
-//     position: relative;
-//     padding: 2rem;
-
-//     &:before {
-//         content: '';
-//         background: url(../assets/img/dog17.jpg) no-repeat center center/cover;
-//         position: absolute;
-//         top: 0;
-//         left: 0;
-//         width: 100%;
-//         height: 100%;
-//         opacity: 0.2;
-//         // z-index: 1;
-//     }
-    
-//     &-content {
-//         position: relative;
-//         text-align: center;
-//         z-index: 1;
-//     }
-// }
-
-
-
-
-
 
 #hello {
 
@@ -227,7 +100,6 @@
         p {
             font-size: 1.2rem;
             margin-bottom: 0.5rem;
-            // text-decoration: underline
         }
     }
 
@@ -244,14 +116,11 @@
     }
 
     padding: 2rem 0;
-    // background: #ccc;
 
     .hello-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 1rem;
-        // background: #ccc;
-        // background: #0d324dbc;
         padding: 0 8rem;
     }
 
@@ -262,18 +131,10 @@
     }
     
     .bg-card1 {
-        // background: #7F5A83;
-        // background: #7f5a837e;
-        // background: #0d324dbc;
-        // background: #ccc;
-        // color: #fff;
         color: #000;
 
     }
     .bg-card2 {
-        // background: #0D324D;
-        // background: #0d324d77;
-        // color: #fff;
         color: #000;
     }
     
@@ -291,22 +152,9 @@
         padding-top: 1rem;
     }
 
-    // img {
-    //     height: 100%;
-        
-    // }
 
     .img-wrapper {
         height: 100%;
-        // padding: 1rem;
-        
-        // .img-3 {
-        //     img {
-        //         height: 100%;
-        //         // width: 100%;
-        //         // position: relative;
-        //     }
-        // }
     }
 
 }
@@ -322,12 +170,10 @@
         padding-bottom: 2rem;
     }
 
-    .action-grid {
+    .action-grid > div {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        // display: grid;
-        // grid-template-columns: repeat(3, 1fr);
 
         .column {
             padding: 1rem 5rem;
@@ -352,11 +198,6 @@
 
 .home3 {
 
-    // .grid-border {
-    //     background-color: grey;
-    //     // padding: 10px;
-    // }
-
     margin: 3rem 10rem;
 
     .bd-right {
@@ -372,28 +213,13 @@
         grid-template-columns: repeat(2, 1fr);
         padding: 2rem 0;
         gap: 2rem;
-        // background-color: grey;
         
     }
 
-    // .bd-light {
-    //     border: 1px solid #000;
-    // }
-
     .home3-content {
         display: grid;
-        // grid-template-columns: 1fr 2fr;
         grid-template-columns: repeat(2, 1fr);
         background-color: #fff;
-        // border: 1px solid #000;
-        // margin: 1rem;
-
-        // flex-direction: row;
-        
-        // img {
-        //     height: 200px;
-        //     width: 200px;
-        // }
     }
 
     .home-content-text {
@@ -410,7 +236,6 @@
         }
 
         a {
-            // text-align: center;
             width: 150px;
         }
     }
