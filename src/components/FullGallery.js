@@ -3,7 +3,7 @@ import Navbar from './Navbar/Navbar';
 import '../scss/FullGallery.scss'; 
 import picArray from './Pictures.js';
 
-
+ 
 class FullGallery extends Component {
          
     state = { 
@@ -58,7 +58,7 @@ class FullGallery extends Component {
                                 />
                             )
                         })
-                    }
+                    } 
                     </div> 
 
                     <div className={showHideClassName}>
@@ -75,15 +75,27 @@ class FullGallery extends Component {
                                 { 
                                     this.state.index === 3 || this.state.index === 4 || this.state.index === 6 ?
                                     <div className="resized">
-                                        <img src={picArray[this.state.index].src} alt="" />
+                                        <img 
+                                            src={picArray[this.state.index].src} 
+                                            alt="" 
+                                            onClick={() =>  this.nextPicture(currIndex)}    
+                                        />
                                     </div>
                                 :   (
                                         this.state.index === 2 ? 
                                         <div className="resized-small">
-                                            <img src={picArray[this.state.index].src} alt="" />
+                                            <img 
+                                                src={picArray[this.state.index].src} 
+                                                alt="" 
+                                                onClick={() => this.nextPicture(currIndex)}    
+                                            />
                                         </div>  
                                         :
-                                        <img src={picArray[this.state.index].src} alt="" />
+                                        <img 
+                                            src={picArray[this.state.index].src} 
+                                            alt="" 
+                                            onClick={() => this.nextPicture(currIndex)}    
+                                        />
                                     )
                                 
                                 }

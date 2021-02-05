@@ -2,126 +2,99 @@
 @import'utilities';
 
 
-// #stories {
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: center;
-    // align-items: center;
+
  
- 
-    #stories-container {
+#stories-container {
+    
+    .bg-1 {
+        background: #fff;
+    }
+
+    .bg-2 {
+        background: #cafff28c;
+    }
+
+    .meet-title {
+        text-align: center;
+        font-size: 2.5rem;
+        padding: 5rem 0;
+    }
+
+    .story-lead {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+    padding: 0 0;
+
+
+    .story-container {
+        display: flex;
+        justify-content: center;
+        padding: 2rem 25rem;
+    }
+
+    .elliePic {
+        height: 350px;
+        width: 400px;
+    }
+
+    .story {
+        width: 100%;
+    }
+
+    .story-left {
+        p {
+            margin-right: 3rem;
+        }
+    }
+
+    .story-right {
+        p {
+            margin-left: 3rem;
+        }
+    }
+
+    .vs {
+        text-align: center;
+        margin-top: 4rem;
+
+        h3 {
+            margin-top: 1rem;
+        }
         
-        .bg-1 {
-            // background: #add4f693;
-            background: #fff;
-        }
-    
-        .bg-2 {
-            background: #cafff28c;
-        }
-
-        .meet-title {
-            text-align: center;
-            font-size: 2.5rem;
-            padding: 5rem 0;
-            // margin-bottom: 1rem;
-            // background: #f6add82c;
-            // color: #fff;
-        }
-
-        .story-lead {
-            font-size: 2.5rem;
-            margin-bottom: 2rem;
-        }
-    
-        padding: 0 0;
-        // background: url(../assets/img/dog11.jpg) no-repeat center center/cover;
-        // background: #edc5bb;
-    
-        .story-container {
-            display: flex;
-            justify-content: center;
-            // align-items: center;
-            // text-align: center;
-            padding: 2rem 25rem;
-            // margin: 2rem 5rem;
-        }
-    
-        .elliePic {
-            height: 350px;
-            width: 400px;
-            // border-radius: 30%;
-    
-                // &:hover {
-                //     transition: all .2s ease;
-                //     transform: scale(1.1);
-                // }
-        }
-    
-        .story {
-            // padding: 2rem 2rem;
-            // border-radius: 50px;
-            width: 100%;
-            // width: 50%;
-            // background: rgba(255, 255, 255, 0.171);
-            // background: #fff;
-        }
-    
-        .story-left {
-            p {
-                margin-right: 3rem;
-            }
-        }
-    
-        .story-right {
-            p {
-                margin-left: 3rem;
-            }
-        }
-
-        .vs {
-            text-align: center;
-            margin-top: 4rem;
-
-            h3 {
-                margin-top: 1rem;
-            }
+        a {
+            display: inline-block;
+            font-weight: 700;
+            color: #fff;
+            margin: 2rem 0;
+            padding: 1rem;
+            background:#e33a93;
+            border-radius: 10px;
             
-            a {
-                display: inline-block;
-                // font-size: 1.5rem;
-                font-weight: 700;
-                color: #fff;
-                margin: 2rem 0;
-                padding: 1rem;
-                background:#e33a93;
-                border-radius: 10px;
-                
-                &:hover {
-                    background: #e33a94a8;
-                }
-            }
-        }
-
-        hr {
-            width: 80%;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        #gallery {
-            // background: #10bece69;
-            padding-bottom: 3rem;
-
-            p {
-                text-align: center;
-                font-size: 2rem;
-                font-weight: 550;
-                padding-top: 1rem;
+            &:hover {
+                background: #e33a94a8;
             }
         }
     }
-// }
+
+    hr {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #gallery {
+        padding-bottom: 3rem;
+
+        p {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 550;
+            padding-top: 1rem;
+        }
+    }
+}
     
 
 @import'media';

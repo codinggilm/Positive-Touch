@@ -23,7 +23,7 @@ const What = () => {
                     <Navbar />
                 )}
             />
-            <main className="tp"> 
+            <main className="tp">  
                 <section className="what-intro">
                     <div className="text-wrapper">
                         <h1>Positive Touch training</h1>

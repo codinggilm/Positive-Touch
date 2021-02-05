@@ -8,7 +8,7 @@ import '../scss/Ellie3.scss';
 import vic from '../assets/victoria/vic5.jpg';
 import ellie1 from '../assets/ellie/ellie1.png';
 import ellie6 from '../assets/ellie/ellie7.png';
-
+ 
 const Ellie3 = () => { 
     return (
         <div> 

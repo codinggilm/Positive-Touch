@@ -5,7 +5,7 @@ import MobileNav from '../components/MobileNav';
 import Footer from '../components/Footer/Footer';
 import '../scss/PuppyServices.scss';
 import puppy from '../assets/img/puppy1.jpg'
- 
+  
 const PuppyServices = () => {
     return (
         <div>

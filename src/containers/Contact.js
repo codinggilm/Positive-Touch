@@ -9,7 +9,7 @@ import logo from '../assets/img/logo-white-trans.png';
  
 const Contact = () => {
     return (
-        <div>   
+        <div id="contact-page">   
             <Media query="(max-width: 599px)" render={() =>
                 (
                     <MobileNav />
@@ -21,7 +21,7 @@ const Contact = () => {
                 )}
             />
             <main id="contact-main" className="tp">
-            <img src={logo} alt=""/>
+                <img src={logo} alt=""/>
                 <div id="form-container">
                     <div className="form-wrap">
                         <p>Send us a quick message below!</p>
@@ -44,19 +44,10 @@ const Contact = () => {
                             </div>
                         </form>
                     </div>
-                </div>
-
-                {/* <div className="contact-content">
-                    <p>You can call Ellie today or send a quick email to ellie@positivetouch.online</p>
-                    <p>Positive Touch</p>
-                    <p>Polegate, East Sussex, England, United Kingdom</p>
-                    <a href="">07925803570</a>
-
-                </div> */}
-
+                </div> 
             </main>
             
-            <div className="contact-footer">
+            <div className="sticky-footer">
                 <Footer/>
             </div>
 

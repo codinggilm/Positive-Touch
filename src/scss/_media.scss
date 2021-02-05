@@ -288,10 +288,18 @@
         }
     }
 
+    // Sticky footer
+    // .sticky-footer {
+    //     position: fixed;
+    //     bottom: 0;
+    //     left: 0;
+    //     width: 100%;
+    // }
+
 
     // Home page ************
     #showcase {
-        height: 300vw;
+        height: 310vw;
     }
 
     #home-content2 {
@@ -328,17 +336,164 @@
 
     .home3 {
 
+        margin: 0rem 0rem;
+
         .home3-grid {
             padding: 0rem;
         }
 
         .home-content-text {
             padding-bottom: 2rem;
-            
+
             p {
                 padding-bottom: 2rem;
             }
 
         }
     }
+
+    .home2 {
+        z-index: 1;
+        background: url(../assets/img/dog29.jpg) no-repeat center center/cover;
+        background-attachment: fixed;
+        height: 140vh;
+
+        .home2-content-card {
+            
+            .card-text-wrapper {
+                text-align: center;
+                
+                h1 {
+                    font-size: 2.2rem;
+                }
+
+                .contact-box {
+                    padding-left: 0rem
+                }
+            }
+        }
+    }
+
+    // About Page **************************
+
+    // What we Do page *********************
+
+    #what-main {
+
+        .what-grid {
+            grid-template-columns: none;
+            grid-template-rows: repeat(1, 1fr);
+        }
+
+        .tp .what-training {
+            
+            .training-container {
+                padding: 2rem 0rem;
+            }
+
+            img {
+                height: 400px;
+            }
+        } 
+    }
+
+    // Puppy Services *****************
+    
+    .services-main {
+
+        .puppy-showcase {
+    
+            .puppy-showcase-grid {
+                grid-template-columns: none;
+                padding: 3rem 1rem;
+                grid-template-rows: repeat(1, 1fr);
+            }
+
+            &-content {
+                p {
+                    padding-bottom: 2rem;
+                }
+            }
+            
+        }
+
+        .puppy-services {
+
+            .action-grid {
+                .column2 {
+                    padding-left: 5rem;
+                }
+            }
+        }
+    }
+
+    // Adult Services *****************
+    .services-main {
+
+        .adult-showcase {
+    
+            .adult-showcase-grid {
+                grid-template-columns: none;
+                padding: 3rem 1rem;
+                grid-template-rows: repeat(1, 1fr);
+            }
+
+            &-content {
+                p {
+                    padding-bottom: 2rem;
+                }
+            }
+            
+        }
+
+        .adult-services {
+
+            .action-grid {
+                .column2 {
+                    padding-left: 5rem;
+                }
+            }
+        }
+    }
+
+    // Meet Ellie page *****************
+    #stories-container {
+        #gallery {
+            p {
+                padding-bottom: 1rem;
+            }
+
+        }
+
+        .vs {
+            margin-top: 2rem;
+
+            h3 {
+                padding: 0 1.5rem;
+            }
+        }
+    }
+
+    // Gallery grid  **********************
+    .gallery-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    // Gallery modal *********************
+    .modal-content {
+        height: 100%;
+    }
+
+    // Contact page ***********************
+    #contact-main {
+        
+        #form-container .form-wrap {
+            width: unset;
+
+            p {
+                padding-bottom: 1.6rem;
+            }
+        }
+    }
+
 }   

@@ -1,22 +1,20 @@
-@import'config';
-@import'utilities';
+// @import'config';
+// @import'utilities';
 
 #contact-main {
+
     background:url(../assets/img/dog16.jpg) no-repeat center center/cover;
-    // height: 100vh;
     text-align: center;
 
     img {
         margin-top: 20px;
         height: 150px;
         width: 400px;
-
     }
 
     #form-container {
-        
+
         padding: 3rem 2rem;
-        // width: 400px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -27,9 +25,7 @@
         }
     
         input {
-            // outline: none;
             border: none;
-            // margin: 0 1rem;
             padding: 0.5rem 0;
             width: 100%;
     
@@ -37,7 +33,6 @@
                 border: none;
             }
         }
-    
     
         .form-wrap {
             text-align: center;
@@ -49,9 +44,6 @@
         }
                         
         .form-group {
-            // padding: 2rem 2rem;
-            // border-bottom: 1px solid #000;
-    
             .message-field {
                 border: none;
             }
@@ -59,18 +51,14 @@
     }
 
     .form-meta {
-
         font-size: 0.8rem;
         color: rgb(153, 153, 153);
-
     }
 
     .message-field {
         textarea {
             width: 100%;
             min-height: 200px;
-            // margin: 0 1rem;
-            // padding: 0.5rem 1rem;
         }
     }
     
@@ -88,14 +76,6 @@
             background: #db74ab;
         }
     }
-}
+} 
 
-
-/**FOOTER**/
-
-// .contact-footer {
-//     position: fixed;
-//     left: 0;
-//     bottom: 0;
-//     width: 100%;
-// }
+@import'media';

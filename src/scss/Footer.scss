@@ -1,14 +1,8 @@
-// @import 'utilities';
-  
 
+  
+ 
 #footer {
-    // position: absolute;
-    // width: 100%;
-    // bottom: 0;
     background: rgb(22, 22, 22);
-    // position: sticky;
-    // position: -webkit-sticky;
-    // bottom: 0;
 
 
     .footer-container {
@@ -21,7 +15,6 @@
         }
 
         img {
-            // display: inline;
             height: 60px;
             width: 140px;
         }
@@ -92,28 +85,16 @@
     }
 
     .chat {
-        // position: relative;
-        // right: -50px;
-        // bottom: 50px;
         
         .icon-wrapper {
             cursor: pointer;
             position: absolute;
             right: 20px;
-            // width: 4rem;
-            // height: 4rem;
-            // display: flex;
-            // justify-content: center;
-            // align-items: center;
-            // text-align: center;
             background: #e33a93;
             border-radius: 50%;
             margin-top: 2rem;
         }
- 
-        // a {
 
-        // }
 
         i {
             color: #fff;
@@ -127,37 +108,5 @@
     }
 }
 
-// Animation *** 
-
-// .slide-out-bottom {
-// 	-webkit-animation: slide-out-bottom 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-// 	        animation: slide-out-bottom 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-// }
-
-// @-webkit-keyframes slide-out-bottom {
-//     0% {
-//       -webkit-transform: translateY(0);
-//               transform: translateY(0);
-//       opacity: 1;
-//     }
-//     100% {
-//       -webkit-transform: translateY(1000px);
-//               transform: translateY(1000px);
-//       opacity: 0;
-//     }
-// }
-
-// @keyframes slide-out-bottom {
-//     0% {
-//       -webkit-transform: translateY(0);
-//               transform: translateY(0);
-//       opacity: 1;
-//     }
-//     100% {
-//       -webkit-transform: translateY(1000px);
-//               transform: translateY(1000px);
-//       opacity: 0;
-//     }
-// }
 
 @import'media';
