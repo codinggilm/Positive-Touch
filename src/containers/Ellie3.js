@@ -67,7 +67,7 @@ const Ellie3 = () => {
                         <h3 className="vs-text">
                             To find out more about the Victoria Stilwell Academy, please click on the button below
                         </h3>
-                        <a href="https://www.vsdogtrainingacademy.com/" target="_blank">Take me there!</a>
+                        <a href="https://www.vsdogtrainingacademy.com/" target="_blank" rel="noreferrer">Take me there!</a>
                     </div>
                 </div>
             </main>

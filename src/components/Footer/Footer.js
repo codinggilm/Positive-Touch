@@ -26,9 +26,9 @@ class Footer extends Component {
                             <div className="footer-links">
                                 <img src={darkLogo} alt=""/>
                                 <div className="social">
-                                    <a href="https://www.facebook.com/PositiveTouchUK"><i className="fab fa-facebook fa-2x"></i></a>
-                                    <a href="https://twitter.com/positive__touch"><i className="fab fa-twitter fa-2x"></i></a>
-                                    <a href="https://twitter.com/positive__touch"><i className="fab fa-whatsapp fa-2x"></i></a>
+                                    <a href="https://www.facebook.com/PositiveTouchUK" target="blank"><i className="fab fa-facebook fa-2x"></i></a>
+                                    <a href="https://twitter.com/positive__touch" target="blank"><i className="fab fa-twitter fa-2x"></i></a>
+                                    <a href="https://twitter.com/positive__touch" target="blank"><i className="fab fa-whatsapp fa-2x"></i></a>
                                 </div>
                             </div>
                             

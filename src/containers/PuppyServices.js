@@ -53,16 +53,16 @@ const PuppyServices = () => {
                     <div className="action-grid">
                         <div className="column">
                             <ul>
-                                <li><i class="fas fa-check-square"></i>Aggression</li>
-                                <li><i class="fas fa-check-square"></i>Pulling on the lead</li>
-                                <li><i class="fas fa-check-square"></i>Constant barking</li>
+                                <li><i className="fas fa-check-square"></i>Aggression</li>
+                                <li><i className="fas fa-check-square"></i>Pulling on the lead</li>
+                                <li><i className="fas fa-check-square"></i>Constant barking</li>
                             </ul>
                         </div>
                         <div className="column column2">
                             <ul>
-                                <li><i class="fas fa-check-square"></i>Jumping</li>
-                                <li><i class="fas fa-check-square"></i>Persistent</li>
-                                <li><i class="fas fa-check-square"></i>Running away</li>
+                                <li><i className="fas fa-check-square"></i>Jumping</li>
+                                <li><i className="fas fa-check-square"></i>Persistent</li>
+                                <li><i className="fas fa-check-square"></i>Running away</li>
                             </ul>
                         </div>
                     </div>
@@ -79,7 +79,7 @@ const PuppyServices = () => {
                         <div className="contact-container">
                             <div className="contact-content-text">
                                 <h1 className="title-reveal">Positive Touch</h1>
-                                <p><i class="fas fa-phone"></i>07925 803 570</p>
+                                <p><i className="fas fa-phone"></i>07925 803 570</p>
                             </div>
                         </div>
                     </div>

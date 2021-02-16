@@ -9,7 +9,6 @@ import What from './containers/What/What';
 import Testimonials from './containers/Testimonials/Testimonials';
 import Contact from './containers/Contact';
 import Ellie3 from './containers/Ellie3';
-import Compo from './containers/Compo';
  
 const App = () => {
     return (
@@ -22,8 +21,6 @@ const App = () => {
             <Route path="/contact" component={Contact} />
             <Route path="/puppyservices" component={PuppyServices} />
             <Route path="/adultservices" component={AdultServices} />
-            <Route path="/compo" component={Compo} />
-
         </div>
     )
 };

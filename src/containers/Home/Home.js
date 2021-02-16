@@ -5,12 +5,12 @@ import MobileNav from '../../components/MobileNav';
 import Footer from '../../components/Footer/Footer';
 import dog from '../../assets/img/dog28.jpg';
 import dog1 from '../../assets/img/dog22.jpg';
-import dog2 from '../../assets/img/dogs1.jpg';
+// import dog2 from '../../assets/img/dogs1.jpg';
 import dog3 from '../../assets/img/dog13.jpg';
 import dog4 from '../../assets/img/dogs1.jpg';
 import dog5 from '../../assets/img/dog9.jpg';
 import dog6 from '../../assets/img/dog17.jpg';
-import dog7 from '../../assets/img/dog29.jpg';
+// import dog7 from '../../assets/img/dog29.jpg';
 import ellie from '../../assets/ellie/ellie4-2.png';
 import logo from '../../assets/img/logo-white-trans.png';
 import '../../scss/Home.scss';
@@ -150,7 +150,7 @@ class Home extends Component {
                                         <div className="hello-text">
                                             <i className="fas fa-dog fa-2x"></i>
                                             <p className="title">Understand your dog(s)</p>
-                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio, voluptatum? Veritatis repellat sint at ad!</p>
+                                            <p>Learn how to understand your dog and why it is so important to get it right, it all starts here!</p>
                                         </div>
                                         <div className="img-wrapper">
                                             <img src={dog3} alt=""/>
@@ -160,7 +160,7 @@ class Home extends Component {
                                         <div className="hello-text">
                                             <i className="fas fa-paw fa-2x"></i>
                                             <p className="title">Grow your bond</p>
-                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio, voluptatum? Veritatis repellat sint at ad!</p>
+                                            <p>We will enable you to grow your bond deeper and thicker, for the benefit of both you and your animal.</p>
                                         </div>
                                         <div className="img-wrapper">
                                             <img src={dog4} alt=""/>
@@ -170,7 +170,7 @@ class Home extends Component {
                                         <div className="hello-text">
                                             <i className="fas fa-bone fa-2x"></i>
                                             <p className="title">Enjoy long lasting results</p>
-                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio, voluptatum? Veritatis repellat sint at ad!</p>
+                                            <p>Your success is our success, we provide you with a roadmap to achieving long and sustainable results.</p>
                                         </div>
                                         <div className="img-wrapper img-3">
                                             <img src={dog5} alt=""/>
@@ -263,7 +263,7 @@ class Home extends Component {
                                     <img src={dog1} alt=""/>
                                     <div className="home-content-text">
                                         <h1>Who we are</h1>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem molestiae a omnis aperiam porro nisi veniam nobis blanditiis possimus eveniet?</p>
+                                        <p>We provide excellence for our customers since 2018, learn more about our history and achievements.</p>
                                         <a href="/about" className="btn-primary">See More</a>
                                     </div>
                                 </div>
@@ -271,7 +271,7 @@ class Home extends Component {
                                     <img src={dog6} alt=""/>
                                     <div className="home-content-text">
                                         <h1>Our purpose</h1>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem molestiae a omnis aperiam porro nisi veniam nobis blanditiis possimus eveniet?</p>
+                                        <p>Discover our mission and our philosophy, and why we can help you to improve your life as a dog owner.</p>
                                         <a href="/what" className="btn-primary">See More</a>
                                     </div>
         
@@ -283,7 +283,7 @@ class Home extends Component {
                                     <img src={ellie} alt=""/>
                                     <div className="home-content-text">
                                         <h1>Meet our trainer</h1>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem molestiae a omnis aperiam porro nisi veniam nobis blanditiis possimus eveniet?</p>
+                                        <p>Learn more about Ellie, our star trainer. The passionate driving force behind Positive Touch.</p>
                                         <a href="/meet" className="btn-primary">See More</a>
                                     </div>
         
@@ -292,8 +292,8 @@ class Home extends Component {
                                     <img src={dog} alt=""/>
                                     <div className="home-content-text">
                                         <h1>See our services</h1>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem molestiae a omnis aperiam porro nisi veniam nobis blanditiis possimus eveniet?</p>
-                                        <a href="#" className="btn-primary">See More</a>
+                                        <p>Different dogs, different needs. Different owners, different approaches. Click to find out what we can offer. </p>
+                                        <a href="/adultservices" className="btn-primary">See More</a>
                                     </div>
                                 </div>
                             </div>
@@ -308,7 +308,7 @@ class Home extends Component {
                                     <h1 className="line3">Benefit from a bespoke training</h1>
                                     <h1 className="line4">Start a new journey with your dog</h1>
                                     <div className="contact-box box-reveal">
-                                        <a href="" className="btn-primary home2-btn">Click to book a free consultation</a>
+                                        <a href="/" className="btn-primary home2-btn">Click to book a free consultation</a>
                                     </div>
                                 </div>
                             </div>

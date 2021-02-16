@@ -1,7 +1,7 @@
 import React from 'react';
 import Media from 'react-media';
 import MobileNav from '../components/MobileNav';
-import Navbar from '../components/Navbar/Navbar';
+import Navbar from '../components/Navbar/Navbar'; 
 import Footer from '../components/Footer/Footer';
 import '../scss/Contact.scss';
 import logo from '../assets/img/logo-white-trans.png';

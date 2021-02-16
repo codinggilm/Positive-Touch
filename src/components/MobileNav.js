@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
-import Media from 'react-media';
+// import React, { Component } from 'react';
+import React from 'react';
+// import Media from 'react-media';
 import '../scss/MobileNav.scss';
 
  

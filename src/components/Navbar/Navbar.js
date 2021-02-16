@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import DropdownMenu from '../Navbar3/DropdownMenu';
+import DropdownMenu from './DropdownMenu';
 import '../../scss/Navbar.scss';
 
  
@@ -27,7 +27,7 @@ class Navbar extends Component {
 
     render() {
 
-        const showMenu = this.state.showDropdown ? "display-block" : "display-none";
+        // const showMenu = this.state.showDropdown ? "display-block" : "display-none";
 
         return (
             <div> 
@@ -38,7 +38,7 @@ class Navbar extends Component {
                             <li><a href="/about">About Us</a></li>
                             <li><a href="/what">What we do</a></li>
                             <ul className="nav-item">
-                                <a>Services</a>
+                                <a href="/">Services</a>
                                 <DropdownMenu />
                             </ul>
                             <li><a href="/meet">Meet Ellie</a></li>

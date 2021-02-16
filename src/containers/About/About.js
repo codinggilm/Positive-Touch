@@ -3,7 +3,7 @@ import Media from 'react-media';
 import Navbar from '../../components/Navbar/Navbar';
 import MobileNav from '../../components/MobileNav';
 import Footer from '../../components/Footer/Footer';
-import dog from '../../assets/img/dog25.jpg';
+// import dog from '../../assets/img/dog25.jpg';
 import dog2 from '../../assets/img/dog30.jpg';
  
 import '../../scss/About.scss';
