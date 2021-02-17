@@ -271,7 +271,7 @@ class Home extends Component {
                                     <img src={dog6} alt=""/>
                                     <div className="home-content-text">
                                         <h1>Our purpose</h1>
-                                        <p>Discover our mission and our philosophy, and why we can help you to improve your life as a dog owner.</p>
+                                        <p>Discover our mission and our philosophy, and why we can help you to improve your life and your pet's.</p>
                                         <a href="/what" className="btn-primary">See More</a>
                                     </div>
         
@@ -292,7 +292,7 @@ class Home extends Component {
                                     <img src={dog} alt=""/>
                                     <div className="home-content-text">
                                         <h1>See our services</h1>
-                                        <p>Different dogs, different needs. Different owners, different approaches. Click to find out what we can offer. </p>
+                                        <p>Different dogs, different needs. Different owners, different approaches. Click to find out what we offer. </p>
                                         <a href="/adultservices" className="btn-primary">See More</a>
                                     </div>
                                 </div>

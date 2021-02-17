@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Navigation, Pagination } from 'swiper';
+import SwiperCore, {Navigation, Pagination} from 'swiper';
 import Media from 'react-media';
 import picArray from './Pictures.js';
 import '../scss/FullGallery.scss'; 
@@ -12,20 +12,34 @@ import 'swiper/components/pagination/pagination.scss';
 
 SwiperCore.use([Navigation, Pagination]);
 
- 
-class FullGallery extends Component {
 
+
+class FullGallery extends Component {
+    
     state = { 
         showModal: false,
         pictures: picArray,
-        index: 0    
+        index: 0,
+        slides: []    
     }
-
+    
     hideModal = () => {
         this.setState({ 
             showModal: false,
-            index: this.state.index
+            index: this.state.index,
+            slides: []
         })
+    }
+
+    showSlides = () => {
+        const slides = this.state.slides;
+        for (let i=0; i < picArray.length; i++) {
+            slides.push(
+                <SwiperSlide tag="li" key={`slide-${i}`}>
+                    <img src={picArray[i].src} alt=""/>
+                </SwiperSlide>
+            ) 
+        }
     }
 
     previousPicture = (currIndex) => {
@@ -45,17 +59,6 @@ class FullGallery extends Component {
         const showHideClassName = this.state.showModal ? "display-block" : "display-none";
         let currIndex = this.state.index;
         
-        const slides = [];
-        for (let i=0; i < picArray.length; i++) {
-            slides.push(
-                <SwiperSlide tag="li" key={`slide-${i}`}>
-                    <img src={picArray[i].src} alt=""/>
-                </SwiperSlide>
-            )
-        }
-
-        
-        
         return (
             <div>
                 <section className="container tp">
@@ -67,7 +70,11 @@ class FullGallery extends Component {
                                     src={pic.src}
                                     alt="pic"
                                     key={pic.id}
-                                    onClick={ () => {this.setState({ showModal: true, index: pic.id })}} 
+                                    onClick={ () => {
+                                        this.setState({ showModal: true, index: pic.id })
+                                        this.showSlides()
+                                        }
+                                    } 
                                 />
                             )
                         })
@@ -82,9 +89,17 @@ class FullGallery extends Component {
                                         <div className="close-icon-wrapper" onClick={this.hideModal}>
                                                 <i className="far fa-window-close fa-2x"></i>
                                         </div>
-                                        <Swiper id="main" tag="section" wrapperTag="ul" pagination navigation>
-                                            {slides}
-                                        </Swiper>                                        
+                                            <Swiper 
+                                                id="main" 
+                                                tag="section" 
+                                                wrapperTag="ul" 
+                                                // loop="true"
+                                                // initialSlide= {this.state.index}
+                                                initialSlide="2"
+                                                pagination
+                                            >
+                                            {this.state.slides}
+                                            </Swiper>  
                                     </div>  
                                 </div>
                             </div>
@@ -104,17 +119,8 @@ class FullGallery extends Component {
                                             className="fas fa-chevron-left fa-2x" 
                                             onClick={() => this.previousPicture(currIndex)}>
                                         </i>
-                                            <img 
-                                                src={picArray[this.state.index].src} 
-                                                alt="pic" 
-                                                onClick={() => this.nextPicture(currIndex)} 
-                                            />
-                                        <i 
-                                            className="fas fa-chevron-right fa-2x" 
-                                            onClick={() =>  this.nextPicture(currIndex)}>
-                                        </i>
- 
-                                        {/* { 
+                                             
+                                        { 
                                             this.state.index === 3 || this.state.index === 4 || this.state.index === 6 ?
                                             <div className="resized">
                                                 <img 
@@ -123,31 +129,35 @@ class FullGallery extends Component {
                                                     onClick={() =>  this.nextPicture(currIndex)}    
                                                 />
                                             </div>
-                                        :   (
-                                                this.state.index === 2 ? 
-                                                <div className="resized-small">
-                                                    <img 
-                                                        src={picArray[this.state.index].src} 
-                                                        alt="" 
-                                                        onClick={() => this.nextPicture(currIndex)}    
-                                                    />
-                                                </div>  
-                                                :
+                                            :   
+                                            this.state.index === 2 ? 
+                                            <div className="resized-small">
                                                 <img 
                                                     src={picArray[this.state.index].src} 
                                                     alt="" 
                                                     onClick={() => this.nextPicture(currIndex)}    
                                                 />
-                                            )
+                                            </div>  
+                                            :
+                                            <img 
+                                                src={picArray[this.state.index].src} 
+                                                alt="" 
+                                                onClick={() => this.nextPicture(currIndex)}    
+                                            />
+                                        }
                                         
-                                        } */}
+                                        <i 
+                                            className="fas fa-chevron-right fa-2x" 
+                                            onClick={() =>  this.nextPicture(currIndex)}>
+                                        </i>
+ 
+                                        
                                         
                                     </div>
                                 </div>
                             </div>
                         )}
                     /> 
-                
                 </section>
 
             </div>

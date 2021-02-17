@@ -60,6 +60,7 @@
 }
 
 
+
 .modal-content {
     text-align: center;
     height: 100vh;
@@ -67,23 +68,26 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
+    
     img {
         height: 900px;
         width: 900px; 
     }
-
+    
     i {
         color: #fff;
         cursor: pointer;
         margin: auto;
-
+        
         &:hover {
             color: $main-color;
             transition: 0.3s;
         }
     }
     
+    // .swiper-pagination-bullet {
+    //     color: $main-color;
+    // }
 }
 
 .resized {
